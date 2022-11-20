@@ -52,10 +52,6 @@ const Login = ({navigation}) => {
           if (!success) {
             console.log(result.message);
             Alert.alert('Warning', result.message);
-            return;
-          } else {
-            console.log(result);
-            navigation.navigate('Main');
           }
         });
       })
